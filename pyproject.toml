@@ -1,0 +1,25 @@
+[project]
+name = "automated-sales-etl-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AkCharis", email = "charisakanbi@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.6",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "psycopg2>=2.9.13",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.0.54",
+    "watchdog>=6.0.0",
+]
+
+[project.scripts]
+automated-sales-etl-pipeline = "automated_sales_etl_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
